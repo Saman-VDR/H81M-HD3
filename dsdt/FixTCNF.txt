@@ -1,0 +1,13 @@
+# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
+# File: FixTCNF.txt
+#
+# Complier fixes for newly extracted AMI/8series/dsdts
+#
+
+# Fix TCNF
+into_all all code_regex If\s\(TCMF\)\s\{\} replace_matched begin 
+If (TCMF)\n
+{\n
+    Return (Zero)\n
+}\n
+end;
