@@ -1,0 +1,10 @@
+# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
+# File: FixNotReturnValue.txt
+#
+# Complier fixes for newly extracted AMI/8series/dsdts
+#
+
+into method label SPL1 insert begin Return (Zero) end;
+into method label _PS2S insert begin Return (Zero) end;
+into method label _PS0 insert begin Return (Zero) end;
+into method label _PS3 insert begin Return (Zero) end;
