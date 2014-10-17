@@ -1,0 +1,100 @@
+# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
+# File: AddUSBpower.txt
+#
+# Patches EHC1, EHC2 and XHC to allow more power output
+# Data is copied from iMac14,1
+#
+
+# Add Method _DSM into Device EHC1
+into method label _DSM parent_label EHC1 remove_entry;
+into device label EHC1 insert begin
+Method (_DSM, 4, NotSerialized)\n
+{\n
+                If (LEqual (Arg2, Zero))\n
+                {\n
+                    Return (Buffer (One)\n
+                    {\n
+                         0x03\n
+                    })\n
+                }\n
+                Return (Package (0x0B)\n
+                {\n
+                    "AAPL,current-available", \n
+                    0x0834, \n
+                    "AAPL,current-extra", \n
+                    0x0A8C, \n
+                    "AAPL,current-extra-in-sleep", \n
+                    0x0A8C, \n
+                    "AAPL,max-port-current-in-sleep", \n
+                    0x0834, \n
+                    "AAPL,device-internal", \n
+                    Zero, \n
+                    Buffer (One)\n
+                    {\n
+                         0x00\n
+                    }\n
+                })\n
+}
+end;
+
+# Add Method _DSM into Device EHC2
+into method label _DSM parent_label EHC2 remove_entry;
+into device label EHC2 insert begin
+Method (_DSM, 4, NotSerialized)\n
+{\n
+                If (LEqual (Arg2, Zero))\n
+                {\n
+                    Return (Buffer (One)\n
+                    {\n
+                         0x03\n
+                    })\n
+                }\n
+                Return (Package (0x0B)\n
+                {\n
+                    "AAPL,current-available", \n
+                    0x0834, \n
+                    "AAPL,current-extra", \n
+                    0x0A8C, \n
+                    "AAPL,current-extra-in-sleep", \n
+                    0x0A8C, \n
+                    "AAPL,max-port-current-in-sleep", \n
+                    0x0834, \n
+                    "AAPL,device-internal", \n
+                    Zero, \n
+                    Buffer (One)\n
+                    {\n
+                         0x00\n
+                    }\n
+                })\n
+}
+end;
+
+# Add Method _DSM into Device XHC
+into method label _DSM parent_label XHC remove_entry;
+into device label XHC insert begin
+Method (_DSM, 4, NotSerialized)\n
+{\n
+                If (LEqual (Arg2, Zero))\n
+                {\n
+                    Return (Buffer (One)\n
+                    {\n
+                         0x03\n
+                    })\n
+                }\n
+                Return (Package (0x09)\n
+                {\n
+                    "AAPL,current-available", \n
+                    0x0834, \n
+                    "AAPL,current-extra", \n
+                    0x0A8C, \n
+                    "AAPL,current-extra-in-sleep", \n
+                    0x0A8C, \n
+                    "AAPL,max-port-current-in-sleep", \n
+                    0x0834, \n
+                    Buffer (One)\n
+                    {\n
+                         0x00\n
+                    }\n
+                })\n
+}
+end;
