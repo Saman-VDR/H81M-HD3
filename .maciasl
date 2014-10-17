@@ -1,5 +1,6 @@
 Add USB power	DSDT	dsdt/AddUSBpower.txt
 Fix ADBG	DSDT	dsdt/FixADBG.txt
 Fix MUT0	DSDT	dsdt/FixMUT0.txt
+Fix Not always return a value	DSDT	dsdt/FixNotReturnValue.txt
 Fix TCNF	DSDT	dsdt/FixTCNF.txt
 Fix XHC 	DSDT	dsdt/FixXHC.txt
