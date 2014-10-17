@@ -5,6 +5,6 @@
 #
 
 into method label SPL1 insert begin Return (Zero) end;
-into method label _PS2S insert begin Return (Zero) end;
+into method label PR2S insert begin Return (Zero) end;
 into method label _PS0 insert begin Return (Zero) end;
 into method label _PS3 insert begin Return (Zero) end;
