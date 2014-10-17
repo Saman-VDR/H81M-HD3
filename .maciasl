@@ -1,1 +1,2 @@
+Add USB power	DSDT	dsdt/AddUSBpower.txt
 Fix ADBG	DSDT	dsdt/FixADBG.txt
