@@ -1,3 +1,4 @@
+Add name to GIGE	DSDT	dsdt/AddGIGE.txt
 Add USB power	DSDT	dsdt/AddUSBpower.txt
 Fix ADBG	DSDT	dsdt/FixADBG.txt
 Fix IRQs for RTC+TIMR DSDT	dsdt/FixIRQs.txt
