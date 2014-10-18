@@ -8,6 +8,7 @@ Fix ADBG	DSDT	dsdt/FixADBG.txt
 Fix IRQs for RTC+TIMR DSDT	dsdt/FixIRQs.txt
 Fix MUT0	DSDT	dsdt/FixMUT0.txt
 Fix "Not always return a value"	DSDT	dsdt/FixNotReturnValue.txt
+Fix Remarks	DSDT	dsdt/FixRemarks.txt
 Fix TCMF	DSDT	dsdt/FixTCMF.txt
 Fix XHC 	DSDT	dsdt/FixXHC.txt
 iMac14,1 	DSDT	dsdt/iMac141.txt
