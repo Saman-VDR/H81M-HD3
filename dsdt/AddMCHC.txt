@@ -1,0 +1,12 @@
+# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
+# File: AddMCHC.txt
+#
+# Nice to have: create device MCHC
+#
+into device label MCHC remove_entry;
+into device label PCI0 insert begin
+Device (MCHC)\n
+{\n
+Name (_ADR, Zero)\n
+}\n
+end
