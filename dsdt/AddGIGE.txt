@@ -1,0 +1,8 @@
+# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
+# File: AddGIGE.txt
+#
+# Nice to have: Give device a Mac conform name
+#
+
+# Rename RP05/PXSX to GIGE 
+into_all device label PXSX parent_label RP05 set_label begin GIGE end;
