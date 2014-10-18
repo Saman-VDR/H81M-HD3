@@ -1,4 +1,7 @@
+Add BUS0	DSDT	dsdt/AddBUS0.txt
 Add name to GIGE	DSDT	dsdt/AddGIGE.txt
+Add _DSM to HDEF	DSDT	dsdt/AddHDEF.txt
+Add _DSM to LPCB	DSDT	dsdt/AddLPCB.txt
 Add MCHC	DSDT	dsdt/AddMCHC.txt
 Add USB power	DSDT	dsdt/AddUSBpower.txt
 Fix ADBG	DSDT	dsdt/FixADBG.txt
@@ -7,3 +10,5 @@ Fix MUT0	DSDT	dsdt/FixMUT0.txt
 Fix "Not always return a value"	DSDT	dsdt/FixNotReturnValue.txt
 Fix TCNF	DSDT	dsdt/FixTCNF.txt
 Fix XHC 	DSDT	dsdt/FixXHC.txt
+iMac14,1 	DSDT	dsdt/iMac141.txt
+iMac14,1-SSDT-3 	DSDT	ssdt/iMac141-SSDT-3.txt
