@@ -4,6 +4,6 @@
 # Nice to have: Give device a Mac conform name
 #
 
-# Rename RP05/PXSX to GIGE 
-into_all device label PXSX parent_label RP05 set_label begin GIGE end;
-into_all method label HPME parent_label RP05 code_regex PXSX replaceall_matched begin GIGE end;
+# Rename RP03/PXSX to GIGE 
+into_all device label PXSX parent_label RP03 set_label begin GIGE end;
+into_all method label HPME parent_label RP03 code_regex PXSX replaceall_matched begin GIGE end;
