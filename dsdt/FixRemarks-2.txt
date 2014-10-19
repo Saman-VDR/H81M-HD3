@@ -8,7 +8,7 @@
 ## Method GACI in PTMD
 into method label GACI parent_label PTMD code_regex ([\s\S]*) store_%8;
 into method label GACI parent_label PTMD remove_entry;
-into device label PTMD insert begin Method (GACI, 1, Serialized)\n{\n // \n} end;
+into device label PTMD insert begin Method (GACI, 0, Serialized)\n{\n // \n} end;
 into method label GACI parent_label PTMD code_regex // replace_matched begin %8 end;
 ## Method GDSV in PTMD
 into method label GDSV parent_label PTMD code_regex ([\s\S]*) store_%8;
