@@ -8,6 +8,7 @@ into device label TIMR code_regex IRQNoFlags\s\(\)\n\s+\{[0-9]\} removeall_match
 #
 # Insert IRQNoFlags on device HPET
 #
+into device label HPET code_regex IRQNoFlags\s\(\)\n\s+\{[0-9]\} removeall_matched;
 into device label HPET code_regex Memory32Fixed replace_matched begin
                         IRQNoFlags ()\n
                             {0}\n
