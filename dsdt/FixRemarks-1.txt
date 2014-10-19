@@ -4,4 +4,4 @@
 # Nice to have: remove some compiler remarks
 #
 # Change _T_ to T_ 
-into_all all code_regex _T_ replaceall_matched begin T_ end;
+into_all all code_regex _T_([0-6]) replaceall_matched begin T_%1 end;
