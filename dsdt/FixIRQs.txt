@@ -1,8 +1,0 @@
-# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
-# File: FixIRQs.txt
-#
-# Remove IRQNoFlags on device RTC and TIMR
-#
-
-into device label RTC  code_regex IRQNoFlags\s\(\)\n\s+\{[0-9]\} removeall_matched;
-into device label TIMR code_regex IRQNoFlags\s\(\)\n\s+\{[0-9]\} removeall_matched;

@@ -1,0 +1,17 @@
+# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
+# File: FixIrqToHpet.txt
+#
+# Remove IRQNoFlags on device RTC and TIMR
+#
+into device label RTC  code_regex IRQNoFlags\s\(\)\n\s+\{[0-9]\} removeall_matched;
+into device label TIMR code_regex IRQNoFlags\s\(\)\n\s+\{[0-9]\} removeall_matched;
+#
+# Insert IRQNoFlags on device HPET
+#
+into device label HPET code_regex Memory32Fixed replace_matched begin
+                        IRQNoFlags ()\n
+                            {0}\n
+                        IRQNoFlags ()\n
+                            {8}\n
+                        Memory32Fixed
+end;
