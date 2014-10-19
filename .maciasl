@@ -7,6 +7,7 @@
 3a. Fix Remarks	DSDT	dsdt/FixRemarks-1.txt
 3b. Fix Remarks	DSDT	dsdt/FixRemarks-2.txt
 4a. Fix IRQs for RTC+TIMR DSDT	dsdt/FixIRQs.txt
+4a. Fix IRQs from RTC+TIMR to HPET DSDT	dsdt/FixIrqToHpet.txt
 4b. Add _DSM to HDEF	DSDT	dsdt/AddHDEF.txt
 4c. Add _DSM to LPCB	DSDT	dsdt/AddLPCB.txt
 4d. Add BUS0	DSDT	dsdt/AddBUS0.txt
