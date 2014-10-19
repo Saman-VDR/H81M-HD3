@@ -1,0 +1,11 @@
+# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
+# File: FixPEGP.txt
+#
+# Move declarations to the block's tail
+#
+into definitionblock code_regex External\s\(_SB_.PCI0......PEGP.EPON.*\).* removeall_matched;
+into definitionblock code_regex Name\s\( replace_matched begin
+External (_SB_.PCI0.PEG0.PEGP.EPON, MethodObj) \n
+    External (_SB_.PCI0.RP05.PEGP.EPON, MethodObj) \n\n
+    Name (
+end;
