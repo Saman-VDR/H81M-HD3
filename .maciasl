@@ -1,4 +1,6 @@
-1a. Fix XHC 	DSDT	dsdt/FixXHC.txt
+1a. Fix PEGP 	DSDT	dsdt/FixPEGP.txt
+1b. Fix XHC 	DSDT	dsdt/FixXHC.txt
+1x. Fix ADBG	DSDT	dsdt/FixADBG.txt
 2a. Fix MUT0	DSDT	dsdt/FixMUT0.txt
 2b. Fix TCMF	DSDT	dsdt/FixTCMF.txt
 2c. Fix "Not always return a value"	DSDT	dsdt/FixNotReturnValue.txt
@@ -12,5 +14,4 @@
 4f. Add USB power	DSDT	dsdt/AddUSBpower.txt
 4g. Add name to GIGE	DSDT	dsdt/AddGIGE.txt
 5a. iMac14,1 	DSDT	dsdt/iMac141.txt
-Fix ADBG	DSDT	dsdt/FixADBG.txt
 iMac14,1-SSDT-3 	DSDT	ssdt/iMac141-SSDT-3.txt
