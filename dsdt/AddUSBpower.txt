@@ -17,7 +17,7 @@ Method (_DSM, 4, NotSerialized)\n
                          0x03\n
                     })\n
                 }\n
-                Return (Package (0x0B)\n
+                Return (Package (0x0A)\n
                 {\n
                     "AAPL,current-available", \n
                     0x0834, \n
@@ -28,11 +28,7 @@ Method (_DSM, 4, NotSerialized)\n
                     "AAPL,max-port-current-in-sleep", \n
                     0x0834, \n
                     "AAPL,device-internal", \n
-                    Zero, \n
-                    Buffer (One)\n
-                    {\n
-                         0x00\n
-                    }\n
+                    Zero \n
                 })\n
 }
 end;
@@ -49,7 +45,7 @@ Method (_DSM, 4, NotSerialized)\n
                          0x03\n
                     })\n
                 }\n
-                Return (Package (0x0B)\n
+                Return (Package (0x0A)\n
                 {\n
                     "AAPL,current-available", \n
                     0x0834, \n
@@ -60,11 +56,7 @@ Method (_DSM, 4, NotSerialized)\n
                     "AAPL,max-port-current-in-sleep", \n
                     0x0834, \n
                     "AAPL,device-internal", \n
-                    Zero, \n
-                    Buffer (One)\n
-                    {\n
-                         0x00\n
-                    }\n
+                    Zero \n
                 })\n
 }
 end;
@@ -81,7 +73,7 @@ Method (_DSM, 4, NotSerialized)\n
                          0x03\n
                     })\n
                 }\n
-                Return (Package (0x09)\n
+                Return (Package (0x08)\n
                 {\n
                     "AAPL,current-available", \n
                     0x0834, \n
@@ -90,11 +82,7 @@ Method (_DSM, 4, NotSerialized)\n
                     "AAPL,current-extra-in-sleep", \n
                     0x0A8C, \n
                     "AAPL,max-port-current-in-sleep", \n
-                    0x0834, \n
-                    Buffer (One)\n
-                    {\n
-                         0x00\n
-                    }\n
+                    0x0834 \n
                 })\n
 }
 end;
