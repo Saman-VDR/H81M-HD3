@@ -6,8 +6,16 @@
 
 # Fix XHC PS0X
 into definitionblock code_regex External\s\(_SB_.PCI0.XHC_.PS0X\) removeall_matched;
-into method label _PS0 parent_label XHC code_regex (?<=\{)(\s+PS0X\s+)(?=\}) replace_matched begin \nPS0X () end;
+into method label _PS0 parent_label XHC code_regex (?<=\{)(\s+PS0X\s+)(?=\}) replace_matched
+begin
+\n
+                    PS0X () \n
+end;
 
 # Fix XHC PS3X
 into definitionblock code_regex External\s\(_SB_.PCI0.XHC_.PS3X\) removeall_matched;
-into method label _PS3 parent_label XHC code_regex (?<=\{)(\s+PS3X\s+)(?=\}) replace_matched begin \nPS3X () end;
+into method label _PS3 parent_label XHC code_regex (?<=\{)(\s+PS3X\s+)(?=\}) replace_matched
+begin
+\n
+                    PS3X () \n
+end;
