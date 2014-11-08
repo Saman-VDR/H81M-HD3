@@ -1,0 +1,32 @@
+# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
+# File: AddPCI1.txt
+#
+# Nice to have: Add device PCI1 into PXSX (RP04)
+# Patch a device to recognize as PCI card
+#
+into device label PCI1 parent_label PXSX remove_entry;
+into device label PXSX parent_label RP04 insert begin
+Device (PCI1)\n
+{\n
+    Name (_ADR, Zero) \n
+    Method (_PRW, 0, NotSerialized)\n
+    {\n
+        Return (GPRW (0x0D, 0x04))\n
+    } \n
+    Method (_DSM, 4, NotSerialized) \n
+    {\n
+        If (LEqual (Arg2, Zero)) { Return (Buffer (One) { 0x03 } ) }\n
+        Return (Package (0x08)\n
+        {\n
+            "AAPL,slot-name", \n 
+            Buffer (0x05) { "PCI1" }, \n
+            "device_type", \n
+            Buffer (0x11) { "Audio Controller" }, \n
+            "model", \n
+            Buffer (0x1A) { "Terratec Aureon Space 7.1" }, \n
+            "name", \n
+            Buffer (0x09) { "Envy24HT" } \n
+        })\n
+    }\n
+}\n
+end;
