@@ -1,0 +1,12 @@
+# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
+# File: iMac141.txt
+#
+# USB - Rename EHC* to EH0*
+#
+
+# Rename device EHC1 to EH01
+into_all device name_adr 0x001D0000 set_label begin EH01 end; 
+# Rename device EHC2 to EH02
+into_all device name_adr 0x001A0000 set_label begin EHC2 end;
+# Replace EHC to EH0
+into_all all code_regex EHC replaceall_matched begin EH0 end;
