@@ -7,6 +7,6 @@
 # Rename device EHC1 to EH01
 into_all device name_adr 0x001D0000 set_label begin EH01 end; 
 # Rename device EHC2 to EH02
-into_all device name_adr 0x001A0000 set_label begin EHC2 end;
+into_all device name_adr 0x001A0000 set_label begin EH02 end;
 # Replace EHC to EH0
 into_all all code_regex EHC replaceall_matched begin EH0 end;
