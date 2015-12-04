@@ -20,8 +20,8 @@ Open Dsdt2Bios and drag AmiBoardInfo.bin and DSDT.aml to the window.
 
 A new AmiBoardInfo.bin (with your patched DSDT.aml inside) will created at the desktop.
 
-Open your bios in UEFITool and replace AmiBoardInfo.bin 
-
+Open your bios file in UEFITool and replace AmiBoardInfo.bin 
+![alt tag](https://cloud.githubusercontent.com/assets/3736530/11601050/eb48de5e-9ad0-11e5-9718-d4a353aff792.png)
 
 ##### Other useful tools:
 * Dsdt2Bios
