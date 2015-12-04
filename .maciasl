@@ -9,7 +9,8 @@
 4a. Fix IRQs for RTC+TIMR DSDT	dsdt/FixIRQs.txt
 4a. Fix IRQs from RTC+TIMR to HPET DSDT	dsdt/FixIrqToHpet.txt
 4b. Add _DSM to HDEF	DSDT	dsdt/AddHDEF.txt
-4c. Add _DSM to LPCB	DSDT	dsdt/AddLPCB.txt
+4c. Add _DSM to LPCB	DSDT	dsdt/AddLPCB-Haswell.txt
+4c. Add _DSM to LPCB (iMac14,1)	DSDT	dsdt/AddLPCB.txt
 4d. Add BUS0	DSDT	dsdt/AddBUS0.txt
 4e. Add MCHC	DSDT	dsdt/AddMCHC.txt
 4f. Add USB power	DSDT	dsdt/AddUSBpower.txt
