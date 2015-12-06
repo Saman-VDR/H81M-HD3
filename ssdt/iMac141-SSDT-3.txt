@@ -41,9 +41,8 @@ begin
 Method (_DSM, 4, NotSerialized)\n
 {\n
    If (LEqual (Arg2, Zero)) { Return (Buffer(One) { 0x03 } ) }\n
-   Return (Package(0x04)\n
+   Return (Package(0x02)\n
    {\n
-          "layout-id", Buffer(0x04) { 0x01, 0x00, 0x00, 0x00 },\n
           "hda-gfx", Buffer(0x0A) { "onboard-1" }\n
    })\n
 }\n
