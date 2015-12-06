@@ -1,0 +1,23 @@
+# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
+# File: RemoveUnused.txt
+#
+# Remove unused devices from xhc
+# GA H81M-HD3 has six usb2 and two usb3 ports from intel
+# HS01 + HS02 are used for usb2 devices connected to usb3 ports
+# HS03 + HS04 are the external usb2 ports
+# HS05 … HS08 are the internal usb2 ports
+# SSP1 + SSP2 are the internal usb3 ports
+#
+# usb2
+into device label HS09 remove_entry;
+into device label HS10 remove_entry;
+into device label HS11 remove_entry;
+into device label HS12 remove_entry;
+into device label HS13 remove_entry;
+into device label HS14 remove_entry;
+into device label HS15 remove_entry;
+# usb3
+into device label SSP3 remove_entry;
+into device label SSP4 remove_entry;
+into device label SSP5 remove_entry;
+into device label SSP6 remove_entry;
