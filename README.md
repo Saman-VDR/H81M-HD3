@@ -25,11 +25,16 @@ Replace body with AmiBoardInfo.bin
 
 ![alt tag](https://cloud.githubusercontent.com/assets/3736530/11601050/eb48de5e-9ad0-11e5-9718-d4a353aff792.png)
 
+
 To update your SSDT-SaSsdt.aml, search for GUID AAA99A23-13B6-4C31-BB8B-299E8EC04FA4
+
 Replace raw 0 with SSDT-SaSsdt.aml
 
+
 To update your SSDT-CpuPm.aml, search for GUID 299141BB-211A-48A5-92C0-6F9A0A3A006E
+
 Replace raw 0 with SSDT-CpuPm.aml
+
 
 ##### Other useful tools:
 * Dsdt2Bios
