@@ -18,3 +18,4 @@
 4h. Add name to GIGE	DSDT	dsdt/AddGIGE.txt
 5a. iMac14,1 	DSDT	dsdt/iMac141.txt
 iMac14,1-SSDT-3 	DSDT	ssdt/iMac141-SSDT-3.txt
+iMac14,1-SSDT-3 Ozmosis 	DSDT	ssdt/iMac141-SSDT-3-oz.txt
