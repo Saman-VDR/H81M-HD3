@@ -2,7 +2,8 @@
 # File: AddHDEF.txt
 #
 # Add method _DSM into HDEF
-#
+# With Ozmosis, this patch is not necessary
+# because Ozmosis uses EFI string injection for HDEF (layout-id 2) by default
 
 into method label _DSM parent_label HDEF remove_entry;
 into device label HDEF insert
