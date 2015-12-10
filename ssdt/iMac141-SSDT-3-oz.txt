@@ -1,0 +1,35 @@
+# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
+# File: iMac141-SSDT-3-oz.txt
+#
+# Transform into iMac14,1
+# SaSsdt patch for
+# Integrated Graphics only
+# Ozmosis version for IGPU EFI string injection
+#
+
+# Remove devices PEGP, P0PA and P0PB
+into device name_adr 0x00010000 remove_entry;
+into device name_adr 0x00010001 remove_entry;
+into device name_adr 0x00010002 remove_entry;
+
+# Rename GFX0 to IGPU
+into_all device name_adr 0x00020000 set_label begin IGPU end; 
+into_all all code_regex GFX0 replaceall_matched begin IGPU end;
+
+# Rename B0D3 to HDAU
+into_all device name_adr 0x00030000 set_label begin HDAU end; 
+into_all all code_regex B0D3 replaceall_matched begin HDAU end;
+
+# Add method _DSM into HDAU
+into method label _DSM parent_label HDAU remove_entry;
+into device label HDAU insert
+begin
+Method (_DSM, 4, NotSerialized)\n
+{\n
+   If (LEqual (Arg2, Zero)) { Return (Buffer(One) { 0x03 } ) }\n
+   Return (Package(0x02)\n
+   {\n
+          "hda-gfx", Buffer(0x0A) { "onboard-1" }\n
+   })\n
+}\n
+end;
