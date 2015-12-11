@@ -2,10 +2,10 @@
 # File: iMac141.txt
 #
 # Transform into iMac14,1
-# Integrated Graphics only
+# with integrated Graphics only
 #
-# Needs patch iMac141-SSDT-3.txt to rename
-# devices to IGPU and HDAU inside SaSsdt
+# Needs patch iMac141-SSDT-3.txt or iMac141-SSDT-3-oz.txt 
+# to rename and remove devices inside SaSsdt too
 #
 
 # Rename GFX0 to IGPU 
