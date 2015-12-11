@@ -1,0 +1,20 @@
+# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
+# File: RemovePEG.txt
+#
+# Transform into iMac14,1
+# with integrated Graphics only
+#
+# Needs patch iMac141-SSDT-3.txt or iMac141-SSDT-3-oz.txt
+# to remove devices inside SaSsdt
+#
+
+# Remove devices PEGP, P0PA and P0PB
+into device name_adr 0x00010000 remove_entry;
+into device name_adr 0x00010001 remove_entry;
+into device name_adr 0x00010002 remove_entry;
+
+# Remove references
+into definitionblock code_regex External\s\(_SB_.PCI0.*PEG.*\).*  removeall_matched;
+into method label _WAK code_regex If\s\(CondRefOf\s\(\\_SB.PCI0.*.PEGP.*\)\)\n.*\{\n.*\n.*\} removeall_matched;
+into method label XL09 code_regex If\s\(LEqual\s\(\\_SB.PCI0.D1F...One\)\)\s*\{\s.*\s*.*\s*.*\s*.*\} removeall_matched;
+into method label XL09 code_regex If\s\(\(\\_SB.PCI0.D1F..==.One\)\)\s*\{\s.*\s*.*\s*.*\s*.*\} removeall_matched;
