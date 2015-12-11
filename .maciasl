@@ -13,9 +13,10 @@
 4c. Add _DSM to LPCB (iMac14,1)	DSDT	dsdt/AddLPCB.txt
 4d. Add BUS0	DSDT	dsdt/AddBUS0.txt
 4e. Add MCHC	DSDT	dsdt/AddMCHC.txt
-4f. Add USB power	DSDT	dsdt/AddUSBpower.txt
-4g. Rename EHC to EH0	dsdt/RenameEHC.txt
-4h. Add name to GIGE	DSDT	dsdt/AddGIGE.txt
+4f. Add name to GIGE	DSDT	dsdt/AddGIGE.txt
+4g. Add USB power	DSDT	dsdt/AddUSBpower.txt
+4h. Rename EHC to EH0	dsdt/RenameEHC.txt
+4i. Remove unused XHC devices	DSDT	dsdt/RemoveUnused.txt
 5a. iMac14,1 	DSDT	dsdt/iMac141.txt
 iMac14,1-SSDT-3 	DSDT	ssdt/iMac141-SSDT-3.txt
 iMac14,1-SSDT-3 Ozmosis 	DSDT	ssdt/iMac141-SSDT-3-oz.txt
