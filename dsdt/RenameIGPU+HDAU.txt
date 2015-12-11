@@ -1,0 +1,12 @@
+# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
+# File: RenameIGPU+HDAU.txt
+#
+# Needs patch iMac141-SSDT-3.txt or iMac141-SSDT-3-oz.txt
+# to rename devices to IGPU and HDAU inside SaSsdt
+#
+
+# Rename GFX0 to IGPU 
+into_all all code_regex GFX0 replaceall_matched begin IGPU end;
+
+# Rename B0D3 to HDAU 
+into_all all code_regex B0D3 replaceall_matched begin HDAU end;
