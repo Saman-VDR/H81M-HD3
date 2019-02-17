@@ -28,17 +28,17 @@ Replace body with AmiBoardInfo.bin
 
 To update your SSDT-SaSsdt.aml, search for GUID AAA99A23-13B6-4C31-BB8B-299E8EC04FA4
 
-Replace raw 0 with SSDT-SaSsdt.aml
+Replace body of raw section 0 with SSDT-SaSsdt.aml
 
 
 To update your SSDT-CpuPm.aml, search for GUID 299141BB-211A-48A5-92C0-6F9A0A3A006E
 
-Replace raw 0 with SSDT-CpuPm.aml
+Replace body of raw section 0 with SSDT-CpuPm.aml
 
 
 ##### Other useful tools:
 * Dsdt2Bios
-* MaciASL - https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads
+* MaciASL - https://github.com/acidanthera/MaciASL/releases
 * UEFITool - https://github.com/LongSoft/UEFITool/releases
 * UEFIExtract - https://github.com/LongSoft/UEFITool/releases
 
