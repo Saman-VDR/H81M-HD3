@@ -1,4 +1,3 @@
-1a. Fix PEGP 	DSDT	dsdt/FixPEGP.txt
 2a. Fix MUT0	DSDT	dsdt/FixMUT0.txt
 2c. Fix "Not always return a value"	DSDT	dsdt/FixNotReturnValue.txt
 3b. Fix Remarks	DSDT	dsdt/FixRemarks-2.txt
