@@ -1,10 +1,6 @@
 1a. Fix PEGP 	DSDT	dsdt/FixPEGP.txt
-1b. Fix XHC 	DSDT	dsdt/FixXHC.txt
-1x. Fix ADBG	DSDT	dsdt/FixADBG.txt
 2a. Fix MUT0	DSDT	dsdt/FixMUT0.txt
-2b. Fix TCMF	DSDT	dsdt/FixTCMF.txt
 2c. Fix "Not always return a value"	DSDT	dsdt/FixNotReturnValue.txt
-3a. Fix Remarks	DSDT	dsdt/FixRemarks-1.txt
 3b. Fix Remarks	DSDT	dsdt/FixRemarks-2.txt
 4a. Fix IRQs for RTC+TIMR DSDT	dsdt/FixIRQs.txt
 4a. Fix IRQs from RTC+TIMR to HPET DSDT	dsdt/FixIrqToHpet.txt
