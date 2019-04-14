@@ -2,9 +2,11 @@
 # File: FixNotReturnValue.txt
 #
 # Complier fixes for newly extracted AMI/8series/dsdts
+# Fixes some warnings "Called method may not always return a value"
 #
 
 into method label SPL1 insert begin Return (Zero) end;
 into method label PR2S insert begin Return (Zero) end;
 into method label _PS0 insert begin Return (Zero) end;
 into method label _PS3 insert begin Return (Zero) end;
+into method label _HID parent_label _SB.TPM insert begin Return (Zero) end;
