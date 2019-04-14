@@ -1,7 +1,0 @@
-# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
-# File: FixRemarks-1.txt
-#
-# Nice to have: remove some compiler remarks
-#
-# Change _T_ to T_ 
-into_all all code_regex _T_([0-6]) replaceall_matched begin T_%1 end;
