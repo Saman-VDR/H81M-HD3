@@ -3,7 +3,7 @@ H81M-HD3
 
 DSDT and SSDT patches for Gigabyte's H81M-HD3 (rev. 1.0)
 
-Used firmware version is H81MHD3.F6 because F7 has write-protected nvram.
+Used firmware version is F6 because F7 has write-protected nvram.
 
 You can get a copy from https://www.gigabyte.com/Motherboard/GA-H81M-HD3-rev-10#support-dl-bios
 
