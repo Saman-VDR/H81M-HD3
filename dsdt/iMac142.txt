@@ -23,4 +23,8 @@ into definitionblock code_regex External\s\(_SB_.PCI0.PEG1.*\).*  removeall_matc
 into method label _WAK code_regex If\s\(CondRefOf\s\(\\_SB.PCI0.PEG1.PEGP.*\)\)\n.*\{\n.*\n.*\} removeall_matched;
 into definitionblock code_regex External\s\(_SB_.PCI0.PEG2.*\).*  removeall_matched;
 into method label _WAK code_regex If\s\(CondRefOf\s\(\\_SB.PCI0.PEG2.PEGP.*\)\)\n.*\{\n.*\n.*\} removeall_matched;
-into method label XL09 code_regex If\s\(LEqual\s\(\\_SB.PCI0.D1F...One\)\)\s*\{\s.*\s*.*\s*.*\s*.*\} removeall_matched;
+into method label XL09 code_regex If\s\(\(\\_SB.PCI0.D1F1.==.One\)\)\s*\{\s.*\s*.*\s*.*\s*.*\} removeall_matched;
+into method label XL09 code_regex If\s\(\(\\_SB.PCI0.D1F2.==.One\)\)\s*\{\s.*\s*.*\s*.*\s*.*\} removeall_matched;
+
+# Rename PEGP to GFX0 
+into_all all code_regex PEG0.PEGP replaceall_matched begin PEG0.GFX0 end;
