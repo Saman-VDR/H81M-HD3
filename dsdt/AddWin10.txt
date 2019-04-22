@@ -1,0 +1,14 @@
+# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
+# File: AddWin10.txt
+#
+# Nice to have: Add Windows 10 to OSI
+
+into method label _INI code_regex (\s+)(OSYS\s=\s0x07DD)(\s+)\} replace_matched begin  \n
+                    $2\n
+                }\n
+\n
+                If (_OSI ("Windows 2015"))\n
+                {\n
+                    OSYS = 0x07DD\n
+                }
+end;
