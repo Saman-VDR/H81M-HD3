@@ -1,22 +1,17 @@
-1a. Fix PEGP 	DSDT	dsdt/FixPEGP.txt
-1b. Fix XHC 	DSDT	dsdt/FixXHC.txt
-1x. Fix ADBG	DSDT	dsdt/FixADBG.txt
-2a. Fix MUT0	DSDT	dsdt/FixMUT0.txt
-2b. Fix TCMF	DSDT	dsdt/FixTCMF.txt
-2c. Fix "Not always return a value"	DSDT	dsdt/FixNotReturnValue.txt
-3a. Fix Remarks	DSDT	dsdt/FixRemarks-1.txt
-3b. Fix Remarks	DSDT	dsdt/FixRemarks-2.txt
-4a. Fix IRQs for RTC+TIMR DSDT	dsdt/FixIRQs.txt
-4a. Fix IRQs from RTC+TIMR to HPET DSDT	dsdt/FixIrqToHpet.txt
-4b. Add _DSM to HDEF	DSDT	dsdt/AddHDEF.txt
-4c. Add _DSM to LPCB	DSDT	dsdt/AddLPCB-Haswell.txt
-4c. Add _DSM to LPCB (iMac14,1)	DSDT	dsdt/AddLPCB.txt
-4d. Add BUS0	DSDT	dsdt/AddBUS0.txt
-4e. Add MCHC	DSDT	dsdt/AddMCHC.txt
-4f. Add name to GIGE	DSDT	dsdt/AddGIGE.txt
-4g. Add USB power	DSDT	dsdt/AddUSBpower.txt
-4h. Rename EHC to EH0	dsdt/RenameEHC.txt
-4i. Remove unused XHC devices	DSDT	dsdt/RemoveUnused.txt
-5a. iMac14,1 	DSDT	dsdt/iMac141.txt
+01. Fix MUT0	DSDT	dsdt/FixMUT0.txt
+02. Fix "Not always return a value"	DSDT	dsdt/FixNotReturnValue.txt
+03. Fix Remarks	DSDT	dsdt/FixRemarks-2.txt
+04. Fix IRQs for RTC+TIMR DSDT	dsdt/FixIRQs.txt
+04. Fix IRQs from RTC+TIMR to HPET DSDT	dsdt/FixIrqToHpet.txt
+05. Add _DSM to HDEF	DSDT	dsdt/AddHDEF.txt
+06. Add _DSM to LPCB	DSDT	dsdt/AddLPCB.txt
+07. Add BUS0	DSDT	dsdt/AddBUS0.txt
+08. Add MCHC	DSDT	dsdt/AddMCHC.txt
+09. Add name to GIGE	DSDT	dsdt/AddGIGE.txt
+10. Add USB power	DSDT	dsdt/AddUSBpower.txt
+11. Rename EHC to EH0	dsdt/RenameEHC.txt
+12. Remove unused XHC devices	DSDT	dsdt/RemoveUnused.txt
+13. iMac14,1 	DSDT	dsdt/iMac141.txt
+13. iMac14,2 	DSDT	dsdt/iMac142.txt
 iMac14,1-SSDT-3 	DSDT	ssdt/iMac141-SSDT-3.txt
-iMac14,1-SSDT-3 Ozmosis 	DSDT	ssdt/iMac141-SSDT-3-oz.txt
+iMac14,2-SSDT-3 	DSDT	ssdt/iMac142-SSDT-3.txt

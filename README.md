@@ -1,9 +1,13 @@
 H81M-HD3
 ========
 
-DSDT and SSDT patches for Gigabyte's H81M-HD3.
+DSDT and SSDT patches for Gigabyte's H81M-HD3 (rev. 1.0)
 
-These patches should work for other Gigabyte 8 series boards, too.
+Used firmware version is F6 because F7 has write-protected nvram.
+
+You can get a copy from https://www.gigabyte.com/Motherboard/GA-H81M-HD3-rev-10#support-dl-bios
+
+But these patches should work for other Gigabyte 8 series boards, too.
 
 
 Use [uefiTableExtract.pl](https://github.com/Saman-VDR/uefiTableExtract) to generate proper DSDT.dsl and SSDT*.dsl files.

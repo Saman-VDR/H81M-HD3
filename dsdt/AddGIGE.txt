@@ -7,3 +7,49 @@
 # Rename RP03/PXSX to GIGE 
 into_all device label PXSX parent_label RP03 set_label begin GIGE end;
 into_all method label HPME parent_label RP03 code_regex PXSX replaceall_matched begin GIGE end;
+
+# Add Method _DSM into Device GIGE
+into method label _DSM parent_label GIGE remove_entry;
+into device label GIGE insert begin
+Method (_DSM, 4, NotSerialized)\n
+{\n
+                If (LEqual (Arg2, Zero))\n
+                {\n
+                    Return (Buffer (One)\n
+                    {\n
+                         0x03\n
+                    })\n
+                }\n
+                Return (Package (0x0C)\n
+                {\n
+                            "AAPL,slot-name", \n
+                            "Built In", \n
+                            "built-in", \n
+                            Buffer (One) \n
+                            { \n
+                                 0x00 \n
+                            }, \n
+
+                            "model", \n
+                            Buffer () \n
+                            { \n
+                                "Realtek RTL8111F Gigabit Network Controller" \n
+                            }, \n
+
+                            "name", \n
+                            Buffer (0x14) \n
+                            { \n
+                                "Realtek Ethernet Controller" \n
+                            }, \n
+
+                            "device_type", \n
+                            Buffer (0x14) \n
+                            { \n
+                                "Ethernet Controller" \n
+                            }, \n
+
+                            "empty", \n
+                            Zero \n
+                })\n
+}\n
+end;
