@@ -12,6 +12,8 @@ But these patches should work for other Gigabyte 8 series boards, too.
 
 Use [UefiTableExtract](https://github.com/Saman-VDR/uefiTableExtract) to generate proper DSDT.dsl and SSDT*.dsl files.
 
+Open the DSDT.dsl with [MaciASL](https://github.com/acidanthera/MaciASL/releases)
+
 In MaciASL open Preferences/Sources and add
 
     Name: _H81M-HD3
@@ -21,14 +23,15 @@ Goto Preferences/iASL and check "Autoload tables in the same directory".
 
 Also verify that you use the same iASL version as with UefiTableExtract.
 
-Apply patches and save to DSDT.aml
+Apply patches, compile and save to DSDT.aml
 
 
-Open Dsdt2Bios and drag AmiBoardInfo.bin and DSDT.aml to the window.
+Open [Dsdt2Bios](https://github.com/Saman-VDR/Dsdt2Bios/releases) and drag AmiBoardInfo.bin and DSDT.aml to the window.
 
 A new AmiBoardInfo.bin (with your patched DSDT.aml inside) will created at the desktop.
 
-Open your bios file in UEFITool and search for TEXT AmiBoardInfo
+Open your firmware file in [UEFITool](https://github.com/LongSoft/UEFITool/releases) and search for TEXT AmiBoardInfo
+
 Replace body with AmiBoardInfo.bin 
 
 ![alt tag](https://cloud.githubusercontent.com/assets/3736530/11601050/eb48de5e-9ad0-11e5-9718-d4a353aff792.png)
