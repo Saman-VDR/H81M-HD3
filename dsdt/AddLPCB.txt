@@ -2,7 +2,7 @@
 # File: AddLPCB.txt
 #
 # Add method _DSM into LPCB
-# to match iMac14.1 with HM87 LPC Controller
+# to match vendor: 8086 ("Intel Corporation"), device: 9c43 ("8 Series LPC Controller")
 #
 
 into method label _DSM parent_label LPCB remove_entry;
@@ -10,11 +10,18 @@ into device label LPCB insert
 begin
 Method (_DSM, 4, NotSerialized)\n
 {\n
-    If (LEqual (Arg2, Zero)) { Return (Buffer (One) { 0x03 } ) }\n
-    Return (Package (0x04)\n
+    If ((Arg2 == Zero))\n
     {\n
-        "device-id", Buffer (0x04) { 0x4B, 0x8C, 0x00, 0x00 }, \n
-        "name", "pci8086,8c4b" \n
+        Return (Buffer (One)\n
+        {\n
+            0x03 \n
+        })\n
+    }\n
+
+    Return (Package (0x02)\n
+    {\n
+        "compatible", \n
+        "pci8086,9c43" \n
     })\n
 }\n
 end;
