@@ -4,7 +4,7 @@
 # Transform into iMac14,2
 # DSDT patch for IGP + GFX0
 #
-# Needs patch iMac142-SSDT-3.txt to work
+# Needs patch iMac141-SSDT-3.txt to rename / remove devices inside SaSsdt
 #
 
 # Rename GFX0 to IGPU 
