@@ -41,7 +41,7 @@ Replace body of raw section 0 with SSDT-CpuPm.aml
 
 
 ##### Other useful tools:
-* Dsdt2Bios
+* Dsdt2Bios - https://github.com/Saman-VDR/Dsdt2Bios/releases
 * MaciASL - https://github.com/acidanthera/MaciASL/releases
 * UEFITool - https://github.com/LongSoft/UEFITool/releases
 * UEFIExtract - https://github.com/LongSoft/UEFITool/releases
