@@ -11,7 +11,9 @@
 10. Add USB power	DSDT	dsdt/AddUSBpower.txt
 11. Rename EHC to EH0	dsdt/RenameEHC.txt
 12. Remove unused XHC devices	DSDT	dsdt/RemoveUnused.txt
-13. iMac14,1 	DSDT	dsdt/iMac141.txt
-13. iMac14,2 	DSDT	dsdt/iMac142.txt
+13. Add Darwin to OSI 	DSDT	dsdt/AddDarwin.txt
+14. Add Windows 10 to OSI 	DSDT	dsdt/AddWin10.txt
+15. iMac14,1 	DSDT	dsdt/iMac141.txt
+15. iMac14,2 	DSDT	dsdt/iMac142.txt
 iMac14,1-SSDT-3 	DSDT	ssdt/iMac141-SSDT-3.txt
 iMac14,2-SSDT-3 	DSDT	ssdt/iMac142-SSDT-3.txt
