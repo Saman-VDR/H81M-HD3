@@ -42,6 +42,12 @@ To update your SSDT-SaSsdt.aml, search for GUID AAA99A23-13B6-4C31-BB8B-299E8EC0
 Replace body of raw section 0 with SSDT-SaSsdt.aml
 
 
+Use latest beta of [ssdtPRGen.sh](https://github.com/Piker-Alpha/ssdtPRGen.sh) to generate a custom ssdt.dsl for your CPU
+
+Open your ssdt.dsl and copy all CPU Scope(s) into the DefinitionBlock of your SSDT-CpuPm.dsl
+
+Compile and save as SSDT-CpuPm.aml
+
 To update your SSDT-CpuPm.aml, search for GUID 299141BB-211A-48A5-92C0-6F9A0A3A006E
 
 Replace body of raw section 0 with SSDT-CpuPm.aml
@@ -53,4 +59,5 @@ Replace body of raw section 0 with SSDT-CpuPm.aml
 * MaciASL - https://github.com/acidanthera/MaciASL/releases
 * UEFITool - https://github.com/LongSoft/UEFITool/releases
 * UEFIExtract - https://github.com/LongSoft/UEFITool/releases
+* ssdtPRGen.sh - https://github.com/Piker-Alpha/ssdtPRGen.sh
 
