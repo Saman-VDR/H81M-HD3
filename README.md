@@ -10,7 +10,7 @@ You can get a copy from https://www.gigabyte.com/Motherboard/GA-H81M-HD3-rev-10#
 But these patches should work for other Gigabyte 8 series boards, too.
 
 
-Use [uefiTableExtract.pl](https://github.com/Saman-VDR/uefiTableExtract) to generate proper DSDT.dsl and SSDT*.dsl files.
+Use [UefiTableExtract](https://github.com/Saman-VDR/uefiTableExtract) to generate proper DSDT.dsl and SSDT*.dsl files.
 
 In MaciASL open Preferences/Sources and add
 
