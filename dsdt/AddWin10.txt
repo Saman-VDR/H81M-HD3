@@ -9,6 +9,6 @@ into method label _INI code_regex (\s+)(OSYS\s=\s0x07DD)(\s+)\} replace_matched 
 \n
                 If (_OSI ("Windows 2015"))\n
                 {\n
-                    OSYS = 0x07DD\n
+                    OSYS = 0x07DF\n
                 }
 end;
