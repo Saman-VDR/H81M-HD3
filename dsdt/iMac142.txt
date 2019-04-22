@@ -1,0 +1,26 @@
+# Maintained by: uglyJoe for: github.com/Saman-VDR/H81M-HD3
+# File: iMac142.txt
+#
+# Transform into iMac14,2
+# DSDT patch for IGP + GFX0
+#
+# Needs patch iMac142-SSDT-3.txt to work
+#
+
+# Rename GFX0 to IGPU 
+into_all all code_regex GFX0 replaceall_matched begin IGPU end;
+
+# Rename B0D3 to HDAU 
+into_all all code_regex B0D3 replaceall_matched begin HDAU end;
+
+# Remove devices P0P2, P0PA and P0PB
+into device name_adr 0x00010000 remove_entry;
+into device name_adr 0x00010001 remove_entry;
+into device name_adr 0x00010002 remove_entry;
+
+# Remove references PEG1 + PEG2
+into definitionblock code_regex External\s\(_SB_.PCI0.PEG1.*\).*  removeall_matched;
+into method label _WAK code_regex If\s\(CondRefOf\s\(\\_SB.PCI0.PEG1.PEGP.*\)\)\n.*\{\n.*\n.*\} removeall_matched;
+into definitionblock code_regex External\s\(_SB_.PCI0.PEG2.*\).*  removeall_matched;
+into method label _WAK code_regex If\s\(CondRefOf\s\(\\_SB.PCI0.PEG2.PEGP.*\)\)\n.*\{\n.*\n.*\} removeall_matched;
+into method label XL09 code_regex If\s\(LEqual\s\(\\_SB.PCI0.D1F...One\)\)\s*\{\s.*\s*.*\s*.*\s*.*\} removeall_matched;
