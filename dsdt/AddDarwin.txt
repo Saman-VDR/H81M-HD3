@@ -4,10 +4,11 @@
 # Nice to have: Add Darwin to OSI
 
 into method label _INI code_regex (\s+)(If\s\(_OSI\s\("Windows\s2001"\)\)) replace_matched begin  \n
-						If (_OSI ("Darwin"))\n
-						{\n
-							Store (0x2710, OSYS)\n
-						}\n
 \n
-						$2
+                If (_OSI ("Darwin"))\n
+                {\n
+                    OSYS = 0x2710\n
+                }\n
+\n
+                $2
 end;
