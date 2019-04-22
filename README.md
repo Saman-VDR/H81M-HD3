@@ -14,8 +14,12 @@ Use [UefiTableExtract](https://github.com/Saman-VDR/uefiTableExtract) to generat
 
 In MaciASL open Preferences/Sources and add
 
-    Name: H81M-HD3
+    Name: _H81M-HD3
     URL:  https://raw.githubusercontent.com/Saman-VDR/H81M-HD3/master
+
+Goto Preferences/iASL and check "Autoload tables in the same directory".
+
+Also verify that you use the same iASL version as with UefiTableExtract.
 
 Apply patches and save to DSDT.aml
 
