@@ -52,6 +52,14 @@ To update your SSDT-CpuPm.aml, search for GUID 299141BB-211A-48A5-92C0-6F9A0A3A0
 
 Replace body of raw section 0 with SSDT-CpuPm.aml
 
+To update the boot logo, search for GUID 7bb28b99-61bb-11d5-9a5d-0090273fc14d
+
+Three matches - the last one is the fullscreen boot logo
+
+Extract to verify, than replace body of raw section with your BootLogo.bin
+
+The current one is a 282kb BMP but I used a 68kb JPG image, renamed to .bin
+
 
 ##### Other useful tools:
 * UefiTableExtract - https://github.com/Saman-VDR/uefiTableExtract
