@@ -90,7 +90,7 @@ Method (_DSM, 4, NotSerialized)\n
        "built-in", Buffer (One) { 0x00 }, \n
        "AAPL,slot-name", Buffer (0x07) {  "Slot-1" }, \n
        "model", Buffer () { "AMD Radeon RX 590" }, \n
-       "hda-gfx", Buffer (0x0A) { "onboard-1" } \n
+       "hda-gfx", Buffer (0x0A) { "onboard-2" } \n
    })\n
 }\n
 end;
@@ -112,7 +112,7 @@ Device (HDAU)\n
        "model", Buffer () { "AMD Radeon RX 590 HD-Audio Controller" }, \n
        "name", Buffer () { "AMD High Definition Audio Controller" }, \n
        "device_type", Buffer () { "Audio Controller" }, \n
-       "hda-gfx", Buffer(0x0A) { "onboard-1" } \n
+       "hda-gfx", Buffer(0x0A) { "onboard-2" } \n
        })\n
     }\n
 }\n
