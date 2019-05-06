@@ -22,10 +22,17 @@ begin
 Method (_DSM, 4, NotSerialized)\n
 {\n
    If (LEqual (Arg2, Zero)) { Return (Buffer(One) { 0x03 } ) }\n
-   Return (Package (0x04)\n
+   Return (Package ()\n
    {\n
-          "AAPL,ig-platform-id",  Buffer (0x04) { 0x03, 0x00, 0x22, 0x0D },\n
-          "hda-gfx", Buffer (0x0A) { "onboard-1" }\n
+       "AAPL,ig-platform-id",  Buffer (0x04) { 0x03, 0x00, 0x22, 0x0D }, \n
+       "device-id", Buffer() { 0x12, 0x04, 0x00, 0x00 }, \n
+       "model", Buffer() { "Intel HD Graphics 4600" }, \n
+       "hda-gfx", Buffer (0x0A) { "onboard-1" }, \n
+       "framebuffer-patch-enable", Buffer(0x04) { 0x01, 0x00, 0x00, 0x00 }, \n
+       "framebuffer-con0-type",    Buffer(0x04) { 0x00, 0x08, 0x00, 0x00 }, \n
+       "framebuffer-con0-enable",  Buffer(0x04) { 0x01, 0x00, 0x00, 0x00 }, \n
+       "framebuffer-con1-type",    Buffer(0x04) { 0x00, 0x08, 0x00, 0x00 }, \n
+       "framebuffer-con1-enable",  Buffer(0x04) { 0x01, 0x00, 0x00, 0x00 }  \n
    })\n
 }\n
 end;
@@ -41,9 +48,32 @@ begin
 Method (_DSM, 4, NotSerialized)\n
 {\n
    If (LEqual (Arg2, Zero)) { Return (Buffer(One) { 0x03 } ) }\n
-   Return (Package(0x02)\n
+   Return (Package(0x0C)\n
    {\n
-          "hda-gfx", Buffer(0x0A) { "onboard-1" }\n
+       "hda-gfx", \n
+       Buffer (0x0A) \n
+       { \n
+           "onboard-1" \n
+       }, \n
+       "AAPL,slot-name", \n
+       "Built In", \n
+       "name", \n
+       "HDMI Controller", \n
+       "built-in", \n
+       Buffer (One) \n
+       { \n
+           0x00 \n
+       }, \n
+       "model", \n
+       Buffer (0x1C) \n
+       { \n
+           "Intel HDMI Audio Controller" \n
+       }, \n
+       "device_type", \n
+       Buffer (0x16) \n
+       { \n
+           "Multimedia Controller" \n
+       } \n
    })\n
 }\n
 end;
